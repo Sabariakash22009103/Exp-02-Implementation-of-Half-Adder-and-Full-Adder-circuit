@@ -74,6 +74,6 @@ endmodule
 ### Half Adder:
 ![Screenshot 2023-09-01 092457](https://github.com/Sabariakash22009103/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119390227/a20b8f13-a65c-41ce-816e-960026574f46)
 ### Full Adder:
-![Screenshot 2023-09-01 092457](https://github.com/Sabariakash22009103/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119390227/33dc2608-48c6-47a6-b7f1-aeab086351a1)
+![Screenshot 2023-09-01 093111](https://github.com/Sabariakash22009103/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119390227/60ea1f9b-1a0d-4cac-8df5-634db3638782)
 ### Result:
 Thus the half adder and full adder circuits are designed and the truth tables is verified using quartus software.
