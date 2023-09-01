@@ -1,4 +1,4 @@
-# Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit
+# Exp-03 Implementation of Half Adder and Full Adder circuit
 
 # Implementation-of-Half-Adder-and-Full-Adder-circuit
 ### AIM:
@@ -36,19 +36,44 @@ Switch ON the main switch
 If the output is 1, then the led glows.
 ### 
 Program:
-/*
+```
 Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
-Logic symbol & Truthtable
-RTL realization
+Developed by: Sabari Akash A
+RegisterNumber: 212222230124 
+```
+```
+Half Adder:
+module halfadder(A,B,sum,carry);
+input A,B;
+output sum,carry;
+assign sum=A^B;
+assign carry=A&B;
+endmodule
+```
+```
+Full Adder:
+module Fulladder(A,B,Cin,sum,carry);
+input A,B,Cin;
+output sum,carry;
+assign sum= A^B^Cin;
+assign carry = (A&B)|((A^B)&Cin);
+endmodule
+```
+## Output Waveform:
+### Half Adder:
+![Screenshot 2023-09-01 084945](https://github.com/Sabariakash22009103/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119390227/df8c47c7-743e-43ce-b9bf-b65de203e935)
+### Full Adder:
+![Screenshot 2023-09-01 091219](https://github.com/Sabariakash22009103/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119390227/b6bfaa14-2e76-47dd-b18f-ee3490fa2703)
 
-### Output:
-### RTL
-### TIMING DIAGRAM
-
-
-### TRUTH TABLE 
-
+## RTL DIAGRAM:
+### Half Adder:
+![Screenshot 2023-09-01 084415](https://github.com/Sabariakash22009103/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119390227/b140583c-4278-41d9-aeca-3c8c12143eed)
+### Full Adder:
+![Screenshot 2023-09-01 085635](https://github.com/Sabariakash22009103/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119390227/f1ee68dc-3f13-4034-9891-d475e263f70e)
+## TRUTH TABLE 
+### Half Adder:
+![Screenshot 2023-09-01 092457](https://github.com/Sabariakash22009103/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119390227/a20b8f13-a65c-41ce-816e-960026574f46)
+### Full Adder:
+![Screenshot 2023-09-01 092457](https://github.com/Sabariakash22009103/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119390227/33dc2608-48c6-47a6-b7f1-aeab086351a1)
 ### Result:
+Thus the half adder and full adder circuits are designed and the truth tables is verified using quartus software.
